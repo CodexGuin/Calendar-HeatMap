@@ -1,3 +1,4 @@
+import 'package:cal_heatmap/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: HomeScreen(),
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
     );
   }
 }
